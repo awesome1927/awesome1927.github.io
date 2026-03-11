@@ -24,8 +24,8 @@
 
     nav {
         background: #4DA6FF; /* sky blue background */
-        text-align: center;  /* Center on mobile */
-        padding: 0.75rem;/
+        padding: 1rem; /* inner spacing */
+        text-align: left; /* align nav links to the left */
     }
 
     /* <a> links within the navigation */
@@ -33,10 +33,8 @@
         color: #FFFFFF; /* white text */
         text-decoration: none; /* remove underline */
         font-size: 1rem;
+        margin: 0 1.5rem; 
         font-weight: bold; /* bold links */
-        display: block;      /* Stack vertically */
-        margin: 0.5rem 0;    /* Vertical spacing */
-        padding: 0.75rem;    /* Larger tap targets */
     }
 
     h1 {
@@ -92,6 +90,21 @@
         text-align: left; /* left-align text inside card */
         flex: 1 1 450px;
     }
+
+                    @media (max-width: 600px) {
+                  nav {
+        text-align: center;  /* Center on mobile */
+        padding: 0.75rem;
+  }
+    
+  nav a {
+        display: block;      /* Stack vertically */
+        margin: 0.5rem 0;    /* Vertical spacing */
+        padding: 0.75rem;    /* Larger tap targets */
+    }
+
+
+}
 
     </style>
 </head>
